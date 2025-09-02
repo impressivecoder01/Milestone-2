@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create login form and flexible nav using flexbox</title>
+    <style>
+        nav li a{
+            text-decoration: none;
+        }
+        nav li{
+            list-style: none;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+        }
+        .other-li{
+            display: flex;
+            gap: 11px;
+        }
+        .login-form{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            /* width: 50%; */
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="other-li">
+            <li><a href="">Home</a></li>
+        <li><a href="">Profile</a></li>
+        <li><a href="">Blog</a></li>
+        <li><a href="">About</a></li>
+        </div>
+        <li><a href="">Login</a></li>
+    </nav>
+
+    <form action="" class="login-form">
+        <h3>Please login</h3>
+        <input type="email" placeholder="your email" required>
+        <input type="password" name="" placeholder="your password" id="" required>
+        <input type="submit" value="Login">
+    </form>
+</body>
+</html>
